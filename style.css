@@ -1,0 +1,41 @@
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  margin: 10px auto;
+}
+#counter {
+  font-weight: bold;
+  font-size: 50px;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+}#save {
+    font-weight: bold;
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+    color: #000;
+  }
+
+button{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
