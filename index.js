@@ -22,7 +22,7 @@ function reset() {
       document.getElementById("save").innerText += counterStr;
     }else
     {   
-      let counterStr =  '-'+ counter
+      let counterStr =  ' - '+ counter
       document.getElementById("save").innerText += counterStr;
 
  
