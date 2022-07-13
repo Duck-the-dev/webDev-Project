@@ -1,0 +1,17 @@
+.box {
+  width: 50x;
+  height: 100px;
+  margin: 40px;
+  padding: 40px;
+}
+
+button {
+  width: 200px;
+  height: 100px;
+  margin: 40px;
+  padding: 40px;
+}
+
+body {
+  background-color: #f0f0f0 !important;
+}
