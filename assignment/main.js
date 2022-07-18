@@ -1,5 +1,14 @@
 "use strict";
 
+function getRandomColor() {
+  let r = Math.floor(Math.random() * 256);
+  let g = Math.floor(Math.random() * 256);
+  let b = Math.floor(Math.random() * 256);
+  let rgb = "rgb(" + r + "," + g + "," + b + ")";
+  console.log(rgb);
+  return rgb;
+}
+
 // declare container
 var container = document.createElement("div");
 container.classList.add("container");
@@ -15,39 +24,11 @@ let newName = document.createElement("button");
 let shuffledColors;
 function shuffleColor(color) {
   let dict = {
-    backgroundColors: [
-      "E5ECE9",
-      "D6D1CD",
-      "F7ECE1",
-      "CAC4CE",
-      "D1BCE3",
-      "DBCDC6",
-      "EAD7D1",
-      "F0F4EF",
-      "pink",
-      "white",
-    ],
-    colors: [
-      "969A97",
-      "C1AAC0",
-      "504B43",
-      "5B6C5D",
-      "676F54",
-      "242038",
-      "75485E",
-      "585481",
-      "1F1A38",
-      "0D1821",
-      "344966",
-      "BFCC94",
-    ],
+    backgroundColors: getRandomColor(),
+    colors: getRandomColor(),
   };
-  let shuffledBackgroundColors = dict.backgroundColors.sort(
-    () => Math.random() - 0.5
-  );
-  let shuffledColors = dict.colors.sort(() => Math.random() - 0.5);
 
-  user.style = `border-radius: 10px ; margin: 10px 20px; padding: 20px; background-color: #${shuffledBackgroundColors[0]}; color: #${shuffledColors[0]}; font-size: 50px; font-weight: bold; text-align: center; font-family: Arial ; `; // style;
+  user.style = `border-radius: 10px ; margin: 10px 20px; padding: 20px; background-color: ${dict.backgroundColors}; color: ${dict.colors}; font-size: 50px; font-weight: bold; text-align: center; font-family: Arial ; `; // style;
   user.style.transition = "transition:all 0.3s ease;";
 
   return newColor;
