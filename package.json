@@ -4,5 +4,11 @@
   "main": "index.js",
   "repository": "https://github.com/Duck-the-dev/webDev-Project",
   "author": "mahmoud <mahmoud.mohamed30120@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --config webpack.dev.js"
+ },
+  "dependencies": {
+    "webpack-cli": "^5.0.1"
+  }
 }
