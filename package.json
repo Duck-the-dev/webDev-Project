@@ -1,0 +1,8 @@
+{
+  "name": "webDev",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Duck-the-dev/webDev-Project",
+  "author": "mahmoud <mahmoud.mohamed30120@gmail.com>",
+  "license": "MIT"
+}
