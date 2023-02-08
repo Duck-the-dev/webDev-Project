@@ -22,14 +22,9 @@ function save() {
     if (document.getElementById("save").innerText == "") {
       let counterStr = counter.toString();
       document.getElementById("save").innerText += counterStr;
-<<<<<<< HEAD:counter/index.js
-    } else {
-      let counterStr = " - " + counter;
-=======
     }else
     {   
       let counterStr =  ' - '+ counter
->>>>>>> main:index.js
       document.getElementById("save").innerText += counterStr;
     }
   }else {
